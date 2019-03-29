@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 延迟加载总开关 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 侵入式延迟加载开关 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--二级缓存总开关-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/school?useSSL=false"/>
+                <property name="username" value="root"/>
+                <property name="password" value="wl968640"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--
+        两种配置：
+        1.基于注解的
+        2.基于SQL映射文件的
+        就是找到相应的配置，动态代理产生接口的实现类对象，绑定方法设SQL语句
+        -->
+        <!--<mapper resource="StudentMapper.xml" />-->
+        <mapper resource="school/StudentMapper.xml" />
+        <mapper resource="school/AddressMapper.xml" />
+        <mapper resource="school/SchoolclassMapper.xml" />
+    </mappers>
+</configuration>

@@ -1,0 +1,5 @@
+<root>
+    <item name='org.apache.commons.lang3.concurrent.BasicThreadFactory'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

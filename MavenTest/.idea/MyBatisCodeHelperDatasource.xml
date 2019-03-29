@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="activeDatabaseInfo">
+      <NewDatabaseInfo>
+        <option name="database" value="school" />
+        <option name="databaseType" value="MySql" />
+        <option name="password" value="wl968640" />
+        <option name="url" value="localhost:3306" />
+        <option name="userName" value="root" />
+      </NewDatabaseInfo>
+    </option>
+    <option name="databaseInfos">
+      <list>
+        <NewDatabaseInfo>
+          <option name="database" value="test" />
+          <option name="databaseType" value="MySql" />
+          <option name="password" value="wl968640" />
+          <option name="url" value="localhost:3306" />
+          <option name="userName" value="root" />
+        </NewDatabaseInfo>
+        <NewDatabaseInfo>
+          <option name="database" value="school" />
+          <option name="databaseType" value="MySql" />
+          <option name="password" value="wl968640" />
+          <option name="url" value="localhost:3306" />
+          <option name="userName" value="root" />
+        </NewDatabaseInfo>
+      </list>
+    </option>
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="genJavaMapperPath" value="$PROJECT_DIR$/src/main/java/mybatisown/bean" />
+        <option name="genMapperXmlPath" value="$PROJECT_DIR$/src/main/java/mybatisown/bean" />
+        <option name="genServiceInterfacePath" value="$PROJECT_DIR$/src/main/java/jdbc/test" />
+        <option name="genServicePath" value="$PROJECT_DIR$/src/main/java/jdbc/test" />
+        <option name="genSqlFilePath" value="$PROJECT_DIR$/src/main/java/jdbc/test" />
+        <option name="javaMapperPackage" value="mybatisown.school.dao" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="javaModelPackage" value="mybatisown.school.bean" />
+        <option name="javaModelPath" value="C:\Users\阿劼\IdeaProjects\MavenTest\src\main\java" />
+        <option name="javaToCrudShouldGenerateService" value="false" />
+        <option name="javaToCrudShouldGenerateServiceInterface" value="false" />
+        <option name="javaToCurdShouldGenerateSql" value="false" />
+        <option name="lastDatabaseCrudChooseModuleName" value="MavenTest" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="mapperFilesFolder" value="C:\Users\阿劼\IdeaProjects\MavenTest\src\main\java\jdbc\test" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="MavenTest">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="mybatisown.school.dao" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaModelPacakge" value="mybatisown.school.bean" />
+                  <option name="javaModelPath" value="C:\Users\阿劼\IdeaProjects\MavenTest\src\main\java" />
+                  <option name="xmlPackage" value="mybatisown.school" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="school:address">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Address" />
+                  <option name="moduleName" value="MavenTest" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="school:schoolclass">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Schoolclass" />
+                  <option name="moduleName" value="MavenTest" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="school:student">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Student" />
+                  <option name="moduleName" value="MavenTest" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:employee">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Employee" />
+                  <option name="moduleName" value="MavenTest" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mybatisown.school" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
