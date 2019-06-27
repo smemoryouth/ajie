@@ -16,5 +16,6 @@ public class Test {
         long num2 = 512234L;
         map.put(num2, 2);
         System.out.println(map);
+        System.out.println(2);
     }
 }
