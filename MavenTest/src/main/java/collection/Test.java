@@ -17,5 +17,6 @@ public class Test {
         map.put(num2, 2);
         System.out.println(map);
         System.out.println(2);
+        System.out.println(120);
     }
 }
