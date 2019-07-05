@@ -10,7 +10,7 @@ import java.util.HashMap;
  */
 public class Test {
     public static void main(String[] args){
-        HashMap<Long, Integer> map = new HashMap<>();
+        HashMap<Long, Integer> map = new HashMap<>(16);
         long num = 512234L;
         map.put(num, 1);
         long num2 = 512234L;

@@ -16,6 +16,7 @@ public class A {
         System.out.println(Arrays.toString(arr));
     }
 
+
     public static void sort(int[] arr){
         for (int i = (arr.length - 2) >>> 1; i >= 0 ; i--) {
             adjust(arr, i, arr.length - 1);
