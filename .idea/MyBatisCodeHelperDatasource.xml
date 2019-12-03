@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="activeDatabaseInfo">
+      <NewDatabaseInfo>
+        <option name="database" value="school" />
+        <option name="databaseType" value="MySql" />
+        <option name="password" value="wl968640" />
+        <option name="url" value="localhost:3306" />
+        <option name="userName" value="root" />
+      </NewDatabaseInfo>
+    </option>
+    <option name="databaseInfos">
+      <list>
+        <NewDatabaseInfo>
+          <option name="database" value="school" />
+          <option name="databaseType" value="MySql" />
+          <option name="password" value="wl968640" />
+          <option name="url" value="localhost:3306" />
+          <option name="userName" value="root" />
+        </NewDatabaseInfo>
+      </list>
+    </option>
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="javaMapperPackage" value="com.mapper" />
+        <option name="javaMapperPath" value="P:/lyzdTest/src/main/java" />
+        <option name="javaModelPackage" value="com.lyzd.mybatisown.bean" />
+        <option name="javaModelPath" value="P:/lyzdTest/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="lyzdTest" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="lyzdTest">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.mapper" />
+                  <option name="javaMapperPath" value="P:/lyzdTest/src/main/java" />
+                  <option name="javaModelPacakge" value="com.lyzd.mybatisown.bean" />
+                  <option name="javaModelPath" value="P:/lyzdTest/src/main/java" />
+                  <option name="xmlPackage" value="com.lyzd.mybatisown.dao" />
+                  <option name="xmlPath" value="P:/lyzdTest/src/main/resource" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="school:address">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Address" />
+                  <option name="moduleName" value="lyzdTest" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="com.lyzd.mybatisown.dao" />
+        <option name="xmlMapperPath" value="P:/lyzdTest/src/main/resource" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

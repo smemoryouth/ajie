@@ -51,17 +51,18 @@ public class UserDaoImplement implements UserDao {
             // 建立连接
             conn = C3p0Utils.getConnection();
             // 创建语句
-            String sql = "select * from user where id =?";
+            String sql = "select * from office where id =?";
             st = conn.prepareStatement(sql);
             st.setInt(1, id);
             // 执行语句
             rs = st.executeQuery();
             while (rs.next()) {
-                System.out.println(rs.getObject("id")
-                        + "\t" + rs.getObject("name")
-                        + "\t" + rs.getObject("sex")
-                        + "\t" + rs.getObject("age")
-                        + "\t" + rs.getObject("score"));
+                System.out.println(rs.getObject(1));
+//                        + "\t" + rs.getObject(2)
+//                        + "\t" + rs.getObject(3)
+//                        + "\t" + rs.getObject(4)
+//                        + "\t" + rs.getObject(5)
+//                        + "\t" + rs.getObject(6));
             }
         } catch (SQLException e) {
             // 包装异常
@@ -92,5 +93,8 @@ public class UserDaoImplement implements UserDao {
             JdbcUtils.free(rs, ps, conn);
         }
         return 0;
+    }
+    public static void main(String[] args) {
+        new UserDaoImplement().getUser(1);
     }
 }

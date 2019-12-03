@@ -1,4 +1,4 @@
-package fuxi;
+package xfuxi;
 
 import java.util.Arrays;
 import java.util.LinkedList;

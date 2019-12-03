@@ -27,15 +27,23 @@ class StandardTemplate {
             // 创建语句
             st = conn.createStatement();
             // 执行语句
-            rs = st.executeQuery("select * from Employee");
+            rs = st.executeQuery("select * from office");
             while (rs.next()) {
                 System.out.println(rs.getObject(1)
                         + "\t" + rs.getObject(2)
                         + "\t" + rs.getObject(3)
-                        + "\t" + rs.getObject(4));
+                        + "\t" + rs.getObject(4)
+                        + "\t" + rs.getObject(5)
+                        + "\t" + rs.getObject(6));
             }
         } finally {
             JdbcUtils.free(rs, st, conn);
         }
+    }
+
+    public static void main(String[] args) throws SQLException {
+        long time = System.currentTimeMillis();
+        template();
+        System.out.println("耗时：" + (System.currentTimeMillis() - time));
     }
 }

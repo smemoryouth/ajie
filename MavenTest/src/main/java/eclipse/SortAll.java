@@ -183,7 +183,7 @@ public class SortAll {
      * @param start 开始位置
      * @param end   结束位置
      */
-    public static void quickSort(int[] arr, int start, int end) {
+    private static void quickSort(int[] arr, int start, int end) {
         // 待排序的数据个数小于MIN_NUMBER，直接用直接插入排序
         if (end - start + 1 <= MIN_NUMBER) {
             System.out.println("=======");

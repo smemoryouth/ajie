@@ -13,6 +13,7 @@ import java.io.InputStream;
  * data 2018/11/5 9:45
  */
 public class MyBatisUtils {
+
     private static SqlSessionFactory ssf;
 
     static{

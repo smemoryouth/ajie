@@ -1,6 +1,5 @@
 package jdbc.base;
 
-
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 
 import javax.sql.DataSource;
@@ -27,12 +26,12 @@ public final class JdbcUtils {
     static {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-//            dataSource = new MyDataSource2();
             Properties prop = new Properties();
             InputStream is = JdbcUtils.class.getClassLoader()
                     .getResourceAsStream("dbcpconfig.properties");
             prop.load(is);
-           dataSource = BasicDataSourceFactory.createDataSource(prop);
+            dataSource = BasicDataSourceFactory.createDataSource(prop);
+            System.out.println(dataSource);
         } catch (Exception e) {
             throw new ExceptionInInitializerError(e);
         }

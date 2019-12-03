@@ -1,4 +1,4 @@
-package fuxi;
+package xfuxi;
 
 class ResultSource{
     void print(int d){

@@ -1,5 +1,7 @@
 package regex;
 
+import org.junit.Test;
+
 import java.util.Scanner;
 
 /**
@@ -23,5 +25,18 @@ public class MatchesTest {
         System.out.println(email.matches(regex));
         Thread.sleep(10);
 
+    }
+
+    @Test
+    public void test() {
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!^%*?&#])[A-Za-z\\d$@$!^%*?&#]{8,20}";
+//        Pattern compile = Pattern
+//                .compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!^%*?&#])[A-Za-z\\d$@$!^%*?&#]{8,20}");
+//        Matcher matcher = compile.matcher("dfsdghjjj512");
+//        if (matcher.find()) {
+//            System.out.println(matcher.group());
+//        }
+        String str = "a@123456789@.cpm";
+        System.out.println(str.matches(regex));
     }
 }

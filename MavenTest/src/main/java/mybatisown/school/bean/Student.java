@@ -6,6 +6,7 @@ import java.io.Serializable;
  * @author 阿劼
  */
 public class Student implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private Integer id;
 
@@ -18,6 +19,7 @@ public class Student implements Serializable {
     private SchoolClass schoolclass;
 
     private Address address;
+
 
     public SchoolClass getSchoolclass() {
         return schoolclass;
@@ -34,8 +36,6 @@ public class Student implements Serializable {
     public void setAddress(Address address) {
         this.address = address;
     }
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

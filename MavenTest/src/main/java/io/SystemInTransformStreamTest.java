@@ -14,7 +14,7 @@ public class SystemInTransformStreamTest {
         // 字节流
         InputStream in = System.in;
 
-        // 将字节转成字符的桥梁,装换流
+        // 将字节转成字符的桥梁,转换流
         InputStreamReader isr = new InputStreamReader(in);
 
         // 字符流
@@ -25,6 +25,7 @@ public class SystemInTransformStreamTest {
             if ("over".equals(line)) {
                 break;
             }
+            System.out.println("函数");
             System.out.println(line.toUpperCase());
         }
     }

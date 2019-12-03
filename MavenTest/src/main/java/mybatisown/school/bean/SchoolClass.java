@@ -7,6 +7,7 @@ import java.util.List;
  * @author 阿劼
  */
 public class SchoolClass implements Serializable {
+    private static final long serialVersionUID = 1L;
     /* */
     private Integer id;
 
@@ -18,6 +19,7 @@ public class SchoolClass implements Serializable {
 
     private List<Student> studentList;
 
+
     public List<Student> getStudentList() {
         return studentList;
     }
@@ -25,8 +27,6 @@ public class SchoolClass implements Serializable {
     public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
     }
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

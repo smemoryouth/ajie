@@ -12,7 +12,7 @@
     <!-- This is my config for mysql-->
     <named-config name="mysql">
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/test?useSSL=false</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/duty?useSSL=false</property>
         <property name="user">root</property>
         <property name="password">wl968640</property>
         <!-- 初始化连接池中的连接数，取值应在minPoolSize与maxPoolSize之间，默认为3-->

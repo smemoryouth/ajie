@@ -6,7 +6,7 @@
     <settings>
         <!-- 延迟加载总开关 -->
         <setting name="lazyLoadingEnabled" value="true"/>
-        <!--&lt;!&ndash; 侵入式延迟加载开关 &ndash;&gt;-->
+        <!-- 侵入式延迟加载开关 -->
         <setting name="aggressiveLazyLoading" value="false"/>
     </settings>
     <environments default="development">
@@ -21,12 +21,6 @@
         </environment>
     </environments>
     <mappers>
-        <!--
-        两种配置：
-        1.基于注解的
-        2.基于SQL映射文件的
-        就是找到相应的配置，动态代理产生接口的实现类对象，绑定方法设SQL语句
-        -->
         <mapper resource="EmployeeMapper.xml" />
         <!--<mapper class="EmployeeDao" />-->
     </mappers>

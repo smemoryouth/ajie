@@ -1,7 +1,6 @@
 package collection;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * description：ArrayList接口的说明及交集并集差集
@@ -105,12 +104,11 @@ public class ArrayListTest {
     /**
      * 差集
      *
-     * @param array1
-     * @param array2
+     * @param array1 0
+     * @param array2 0
      */
     public static void getUn(ArrayList<Integer> array1, ArrayList<Integer> array2) {
         array2.remove(array1);
         System.out.println(array1);
     }
-
 }

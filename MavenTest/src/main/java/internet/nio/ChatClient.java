@@ -117,6 +117,6 @@ public class ChatClient {
     public static void main(String[] args) {
         ScheduledExecutorService pool = new ScheduledThreadPoolExecutor(3,
                 new BasicThreadFactory.Builder().namingPattern("mypool-%d").daemon(false).build());
-        pool.execute(new ClientThread("127.0.0.1", 8888));
+        pool.execute(new ClientThread("127.0.0.1", 8800));
     }
 }

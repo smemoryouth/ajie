@@ -10,7 +10,6 @@
     <build>
         <plugins>
             <plugin>
-
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
@@ -84,7 +83,7 @@
             <version>1.4</version>
         </dependency>
 
-
+        <!-- netty相关-->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-transport</artifactId>
@@ -157,11 +156,11 @@
             <version>4.0.5.RELEASE</version>
         </dependency>
         <!--spring-framework-bom包-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-framework-bom</artifactId>
-            <version>4.0.5.RELEASE</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-framework-bom</artifactId>-->
+<!--            <version>4.0.5.RELEASE</version>-->
+<!--        </dependency>-->
         <!--spring-instrument包-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -243,6 +242,103 @@
             <artifactId>mybatis-redis</artifactId>
             <version>1.0.0-beta2</version>
         </dependency>
+        <!-- spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.1.6.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.xmlunit/xmlunit-core -->
+        <dependency>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-core</artifactId>
+            <version>2.6.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+        <!-- 工作流activiti相关 -->
+        <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-bpmn-converter -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-bpmn-converter</artifactId>
+            <version>7.1.0.M4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-bpmn-layout -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-bpmn-layout</artifactId>
+            <version>7.1.0.M4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-bpmn-model -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-bpmn-model</artifactId>
+            <version>7.1.0.M4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-common-rest -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-common-rest</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-engine -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-engine</artifactId>
+            <version>7.1.0.M4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-json-converter -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-json-converter</artifactId>
+            <version>7.1.0.M4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-rest -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-rest</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-simple-workflow -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-simple-workflow</artifactId>
+            <version>5.23.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring</artifactId>
+            <version>7.1.0.M4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.sejda/sejda-icepdf -->
+        <dependency>
+            <groupId>org.sejda</groupId>
+            <artifactId>sejda-icepdf</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>

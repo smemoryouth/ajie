@@ -40,7 +40,7 @@ public class ThreadPool {
      * 创建无大小限制的线程池
      */
     @Test
-    private void executorsMethod1() {
+    public void executorsMethod1() {
         ExecutorService pool = Executors.newCachedThreadPool();
         pool.submit(new MyRunnable1());
         pool.execute(new MyRunnable1());
@@ -51,7 +51,7 @@ public class ThreadPool {
      * 创建固定大小的线程池
      */
     @Test
-    private void executorsMethod2() {
+    public void executorsMethod2() {
         ExecutorService pool = Executors.newFixedThreadPool(2);
         pool.submit(new MyRunnable1());
         pool.submit(new MyRunnable1());
@@ -62,7 +62,7 @@ public class ThreadPool {
      * 创建单线程池
      */
     @Test
-    private void executorsMethod3() {
+    public void executorsMethod3() {
         ExecutorService pool = Executors.newSingleThreadExecutor();
         pool.submit(new MyRunnable1());
         pool.shutdown();
@@ -72,7 +72,7 @@ public class ThreadPool {
      * 创建定时调度池
      */
     @Test
-    private void executorsMethod4() {
+    public void executorsMethod4() {
         ScheduledExecutorService pool = Executors.newScheduledThreadPool(2);
         pool.scheduleWithFixedDelay(new MyRunnable1(), 3, 2, TimeUnit.SECONDS);
     }
@@ -81,7 +81,7 @@ public class ThreadPool {
      * 阿帕奇线程池模板
      */
     @Test
-    private void executorsMethod5() {
+    public void executorsMethod5() {
         ScheduledExecutorService pool = new ScheduledThreadPoolExecutor(3,
                 new BasicThreadFactory.Builder().namingPattern("mypool-%d").daemon(false).build());
         pool.submit(new MyRunnable1());
@@ -93,7 +93,7 @@ public class ThreadPool {
      * ThreadPoolExecutor使用
      */
     @Test
-    private  void fun() {
+    public  void fun() {
         ThreadPoolExecutor pool = new ThreadPoolExecutor(2, 4,
                 60, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5),
                 Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());

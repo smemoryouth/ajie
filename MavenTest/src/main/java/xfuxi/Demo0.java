@@ -1,4 +1,4 @@
-package fuxi;
+package xfuxi;
 
 /**
  * description：循环单链表
